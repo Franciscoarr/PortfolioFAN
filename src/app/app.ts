@@ -68,7 +68,6 @@ export class App implements OnInit {
     }
   ];
 
-  // --- HABILIDADES CON LOGOS (DEVICON) ---
   habilidadesTecnicas = [
     { 
       categoria: 'Front-end', 
@@ -128,7 +127,7 @@ export class App implements OnInit {
       ],
       tecnologias: ['MongoDB', 'Express', 'Angular', 'Node.js'],
       enlace: 'https://github.com/Franciscoarr/RedSocialMEAN', 
-      imagen: 'assets/proyecto1.jpg' 
+      imagen: 'assets/redsocialmean.jpg' 
     },
     {
       nombre: 'Simulador Mundial 2026', 
@@ -139,7 +138,7 @@ export class App implements OnInit {
       ],
       tecnologias: ['Python'], 
       enlace: 'https://github.com/Franciscoarr/SimuladorMundial2026', 
-      imagen: 'assets/proyecto-mundial.jpg'
+      imagen: 'assets/mundial.jpg'
     },
     {
       nombre: 'Espalatro', 
@@ -150,7 +149,7 @@ export class App implements OnInit {
       ],
       tecnologias: ['Lua'], 
       enlace: 'https://github.com/Franciscoarr/Espalatro', 
-      imagen: 'assets/proyecto-espalatro.jpg'
+      imagen: 'assets/espalatro.jpg'
     },
     {
       nombre: 'Gesture Media Controller', 
@@ -159,9 +158,9 @@ export class App implements OnInit {
         'Interpretación de gestos manuales para traducirlos en comandos multimedia.',
         'Foco absoluto en la optimización de latencia y experiencia de usuario inmersiva.'
       ],
-      tecnologias: ['Python', 'Computer Vision'], 
+      tecnologias: ['Python'], 
       enlace: 'https://github.com/Franciscoarr/Gesture-Media-Controller', 
-      imagen: 'assets/proyecto2.jpg'
+      imagen: 'assets/gesture.jpg'
     }
   ];
 

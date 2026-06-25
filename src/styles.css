@@ -69,7 +69,6 @@
   .tech-card {
     @apply bg-slate-900 dark:bg-slate-800 text-white p-6 rounded-xl shadow-md border-t-4 border-blue-500 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(59,130,246,0.15)] hover:-translate-y-1 hover:border-blue-400;
   }
-  /* Mejorada con resplandor sutil (glow) */
   .project-card {
     @apply bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-200 dark:border-slate-700 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(59,130,246,0.1)] hover:border-blue-300 dark:hover:border-slate-500 flex flex-col;
   }
@@ -96,7 +95,6 @@
     @apply relative space-y-8 pb-6 mt-10;
   }
   
-  /* La línea central */
   .timeline-wrapper::before {
     @apply content-[''] absolute left-5 md:left-1/2 top-0 bottom-0 w-0.5 -translate-x-1/2 bg-gradient-to-b from-transparent via-slate-300 dark:via-slate-700 to-transparent;
   }
@@ -105,12 +103,10 @@
     @apply relative flex items-center w-full;
   }
   
-  /* El icono posicionado de forma absoluta en el centro */
   .timeline-icon-container {
     @apply absolute left-5 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full border-[3px] border-white dark:border-slate-900 bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400 transition-all duration-500 group-hover:bg-blue-500 group-hover:text-white group-hover:scale-125 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.6)] z-10;
   }
   
-  /* Las tarjetas con un ancho fijo del 45% (dejan un 10% libre en el centro) */
   .timeline-content {
     @apply w-[calc(100%-3.5rem)] ml-14 md:w-[45%] md:ml-0 p-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-blue-300 dark:hover:border-slate-500;
   }
@@ -125,21 +121,18 @@
   }
 }
 
-/* --- ANIMACIONES PERSONALIZADAS (EL TOQUE "PRO") --- */
+/* --- ANIMACIONES PERSONALIZADAS --- */
 @layer utilities {
-  /* Gradiente animado para el nombre */
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-teal-300 to-blue-500 bg-[length:200%_auto] animate-gradient-x;
   }
 
-  /* Entradas suaves desde abajo (Fade in up) */
   .animate-fade-in-up {
     animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     opacity: 0;
     transform: translateY(30px);
   }
   
-  /* Retrasos para que aparezcan en cascada */
   .delay-100 { animation-delay: 100ms; }
   .delay-200 { animation-delay: 200ms; }
   .delay-300 { animation-delay: 300ms; }
@@ -147,7 +140,6 @@
   .delay-500 { animation-delay: 500ms; }
 }
 
-/* Keyframes nativos */
 @keyframes fadeInUp {
   to {
     opacity: 1;
